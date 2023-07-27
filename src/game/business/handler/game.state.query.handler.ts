@@ -1,6 +1,6 @@
 import { IQueryHandler, QueryHandler } from "@nestjs/cqrs";
 import { GameState } from "../state/game.state";
-import { GameStateQuery } from "../../../websocket/business /query/game-state.query";
+import { GameStateQuery } from "../../../websocket/business/query/game-state.query";
 
 @QueryHandler(GameStateQuery)
 export class GameStateQueryHandler implements IQueryHandler<GameStateQuery> {

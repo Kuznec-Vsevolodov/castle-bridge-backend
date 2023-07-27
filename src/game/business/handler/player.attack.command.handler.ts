@@ -2,9 +2,9 @@ import { CommandHandler, EventBus, ICommandHandler } from "@nestjs/cqrs";
 import { Score } from "../score/score.enity";
 import { getHit } from "../helper/hit-calculator.helper";
 import { Unit } from "../../../unit/entity/unit.enity";
-import { PlayerAttackCommand } from "../../../websocket/business /command/player-attack";
+import { PlayerAttackCommand } from "../../../websocket/business/command/player-attack";
 import { GameState } from "../state/game.state";
-import { GameOverEvent } from "../../../websocket/business /event/game-over.event";
+import { GameOverEvent } from "../../../websocket/business/event/game-over.event";
 import { AttackResultDto } from "../../../shared/dto/attack.result.dto";
 
 @CommandHandler(PlayerAttackCommand)

@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { GameState } from "../state/game.state";
-import { GameStartCommand } from "../../../websocket/business /command/game-start";
-import { GameRestartCommand } from "../../../websocket/business /command/game-restart";
+import { GameStartCommand } from "../../../websocket/business/command/game-start";
+import { GameRestartCommand } from "../../../websocket/business/command/game-restart";
 import { GameStateFactory } from "../state/game.state.factory";
 
 @CommandHandler(GameRestartCommand)

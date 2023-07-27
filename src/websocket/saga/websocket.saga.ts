@@ -3,8 +3,8 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { WebSocketGameGateway } from "../presentation/websocket.game.gateway";
 import { ofType, Saga } from "@nestjs/cqrs";
-import { VillainAttackedEvent } from "../business /event/villain-attacked.event";
-import { GameOverEvent } from "../business /event/game-over.event";
+import { VillainAttackedEvent } from "../business/event/villain-attacked.event";
+import { GameOverEvent } from "../business/event/game-over.event";
 
 @Injectable()
 export class WebSocketSaga {

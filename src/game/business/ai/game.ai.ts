@@ -3,9 +3,9 @@ import { GameState } from "../state/game.state";
 import { Interval } from "@nestjs/schedule";
 import { getHit } from "../helper/hit-calculator.helper";
 import { EventBus } from "@nestjs/cqrs";
-import { VillainAttackedEvent } from "../../../websocket/business /event/villain-attacked.event";
+import { VillainAttackedEvent } from "../../../websocket/business/event/villain-attacked.event";
 import { Unit } from "../../../unit/entity/unit.enity";
-import { GameOverEvent } from "../../../websocket/business /event/game-over.event";
+import { GameOverEvent } from "../../../websocket/business/event/game-over.event";
 import { AttackResultDto } from "../../../shared/dto/attack.result.dto";
 
 @Injectable()

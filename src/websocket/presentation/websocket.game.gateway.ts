@@ -4,15 +4,15 @@ import {ServerToClientEvents} from '../../shared/contracts/server-to-client.even
 import {ClientToServerEvents} from '../../shared/contracts/client-to-server.event';
 import {PlayerJoinInterface} from '../../shared/contracts/player-join.interface';
 import {CommandBus, QueryBus} from "@nestjs/cqrs";
-import {PlayerJoinCommand} from "../business /command/player-join";
-import {PlayerAttackCommand} from "../business /command/player-attack";
-import {PlayerLeaveCommand} from "../business /command/player-leave";
+import {PlayerJoinCommand} from "../business/command/player-join";
+import {PlayerAttackCommand} from "../business/command/player-attack";
+import {PlayerLeaveCommand} from "../business/command/player-leave";
 import {Injectable} from "@nestjs/common";
-import {GameStateQuery} from "../business /query/game-state.query";
+import {GameStateQuery} from "../business/query/game-state.query";
 import {AttackResultDto} from "../../shared/dto/attack.result.dto";
-import {GameOverCommand} from "../business /command/game-over";
-import {GameStartCommand} from "../business /command/game-start";
-import { GameRestartCommand } from "../business /command/game-restart";
+import {GameOverCommand} from "../business/command/game-over";
+import {GameStartCommand} from "../business/command/game-start";
+import { GameRestartCommand } from "../business/command/game-restart";
 
 @WebSocketGateway({
   cors: {
